@@ -5,7 +5,7 @@ class String
   end
   
   def classify
-    self.split('/').map{ |w| w.camelize }.join('::')
+    self.split('_').map{ |w| w.camelize }.join('::')
   end
   
 end
